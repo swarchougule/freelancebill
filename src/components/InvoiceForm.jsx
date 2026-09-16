@@ -438,22 +438,23 @@ export default function InvoiceForm({
                       )}
                     </div>
 
-                    {/* Calculated Amount */}
-                    <div className="item-row-amount">
-                      {currencySymbol}{rowAmount.toFixed(2)}
-                    </div>
+                    {/* Calculated Amount & Delete Icon */}
+                    <div className="item-amount-delete-group">
+                      <div className="item-row-amount">
+                        {currencySymbol}{rowAmount.toFixed(2)}
+                      </div>
 
-                    {/* Delete Icon */}
-                    {items.length > 1 && (
-                      <button 
-                        type="button" 
-                        className="btn-delete-row-hover"
-                        onClick={() => onRemoveItem(index)}
-                        title="Remove line item"
-                      >
-                        <Trash2 size={16} />
-                      </button>
-                    )}
+                      {items.length > 1 && (
+                        <button 
+                          type="button" 
+                          className="btn-delete-row-hover"
+                          onClick={() => onRemoveItem(index)}
+                          title="Remove line item"
+                        >
+                          <Trash2 size={16} />
+                        </button>
+                      )}
+                    </div>
                   </div>
                 </div>
 

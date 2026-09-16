@@ -46,7 +46,7 @@ export default function Header({
 
         {/* Usage Indicator */}
         {usageInfo && !usageInfo.isPro && (
-          <div className="usage-indicator" style={{ marginLeft: '1rem', fontSize: '0.9rem', color: '#555' }}>
+          <div className="usage-indicator">
             {`${usageInfo.count} of ${usageInfo.limit} free invoices used`}
           </div>
         )}

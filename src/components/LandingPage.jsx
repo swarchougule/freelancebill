@@ -648,6 +648,7 @@ export default function LandingPage({ onStartApp, user, onLogin, onLogout, onSav
           <div className="footer-bottom">
             <p>© {new Date().getFullYear()} FreelanceBill. All rights reserved.</p>
             <p className="footer-credit">Designed with clarity & confidence.</p>
+            <p className="made-by-credit">Made by <a href="https://swarchougule.in" target="_blank" rel="noopener noreferrer">Swar Chougule</a></p>
           </div>
         </div>
       </footer>
